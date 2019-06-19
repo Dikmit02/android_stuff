@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/man_icon" />
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/background10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="NEARBY GYMS"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="386dp"
+                    android:layout_height="143dp"
+                    android:layout_weight="1"
+                    android:background="@color/img11"
+                    app:srcCompat="@drawable/img11" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="386dp"
+                    android:layout_height="143dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    app:srcCompat="@drawable/img2" />
+            </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="30dp">
+
+
+               <TextView
+                   android:text="VIEW ALL"
+                   android:textSize="10dp"
+                   android:textStyle="bold"
+                   android:layout_gravity="center"
+                   android:padding="10dp"
+                   android:layout_marginLeft="235dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+               <Button
+
+                   android:layout_marginRight="10dp"
+                   android:layout_width="40dp"
+                   android:layout_height="match_parent"
+                   android:background="@drawable/btn" />
+           </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="386dp"
+                    android:layout_height="143dp"
+                    android:layout_weight="1"
+                    android:background="@color/imag13"
+                    app:srcCompat="@drawable/img14" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="386dp"
+                    android:layout_height="143dp"
+                    android:layout_weight="1"
+                    android:background="@color/imag14"
+                    android:text="jijijij"
+                    app:srcCompat="@drawable/img13" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView2"
+                android:text="FITSHOP"
+                android:textStyle="bold"
+                android:textSize="10sp"
+                android:padding="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="386dp"
+                android:layout_height="143dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                app:srcCompat="@drawable/img15" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>
